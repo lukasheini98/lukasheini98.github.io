@@ -15,7 +15,7 @@ body{
     overflow: hidden;
     top: 0;
     position: fixed;
-    margin-left: 1200px;
+    margin-left: clamp(700px,70%,1200px);
   }
 
 .white-icon {
