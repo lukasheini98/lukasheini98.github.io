@@ -1,0 +1,117 @@
+body{
+    background-color: #151E2C;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #C6C8CD;
+}
+
+#portrait{
+    border-radius: 50%;
+}
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    margin-left: 1200px;
+  }
+
+.white-icon {
+    color: white;
+  }
+  
+   li {
+    float: left;
+  }
+  
+   li a {
+    display: block;
+    color: #C6C8CD;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  li a:hover{
+    text-decoration: underline;
+    }
+    .home{
+        margin: 200px;
+        
+    }
+    .aboutMe{
+        display: block;
+        text-align: center;
+        margin: 100px 20px;
+    }
+    .projects{
+        margin: 100px 20px;
+    }
+    .project:hover {
+        transform: translate3d(100px,0,0);
+        transition: transform .5s ease-in-out;
+    }
+    .project{
+        z-index: 2;
+        padding: 0px 20px;
+        border-radius: 10px;
+        background-color: #283446;
+        margin-bottom: 40px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+    .duneImage{
+        border-radius: 10px;
+    }
+    .linkstoProject a{
+        text-decoration: none;
+    }
+
+    #contact {
+        text-align: center;
+    }
+    
+    .skillset{
+        display: flex;
+        gap: 150px;
+        justify-content: center;
+    }
+    .backend{
+        border-radius: 10px;
+        padding: 10px 50px;
+        background-color: rgb(62, 61, 61);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    }
+    .frontend{
+        border-radius: 10px;
+        padding: 10px 50px;
+        background-color: rgb(62, 61, 61);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .skillset img{
+        display: block;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .navbar ul{
+        z-index: 2;
+    }
+
+    .emaillink{
+        text-decoration: none;
+        color:#C6C8CD;
+        padding: 5px 30px;
+        border-radius: 5px;
+        border: 1px solid #C6C8CD;
+    }
+    .emaillink:hover{
+        box-shadow: 0 0 2px 2px #C6C8CD;
+
+    }
+
+    .footer{
+        margin-top: 200px;
+        text-align: center;
+    }
