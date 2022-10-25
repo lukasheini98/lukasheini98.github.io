@@ -32,6 +32,11 @@ body{
     padding: 14px 16px;
     text-decoration: none;
   }
+
+     .navbar{
+        display: flex;
+        justify-content: center;
+    }
   li a:hover{
     text-decoration: underline;
     }
