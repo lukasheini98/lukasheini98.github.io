@@ -15,7 +15,6 @@ body{
     overflow: hidden;
     top: 0;
     position: fixed;
-    margin-left: clamp(700px,70%,1200px);
   }
 
 .white-icon {
@@ -32,11 +31,6 @@ body{
     padding: 14px 16px;
     text-decoration: none;
   }
-
-     .navbar{
-        display: flex;
-        justify-content: center;
-    }
   li a:hover{
     text-decoration: underline;
     }
@@ -99,7 +93,10 @@ body{
         margin: auto;
         padding: 10px;
     }
-
+    .navbar{
+        display: flex;
+        justify-content: center;
+    }
     .navbar ul{
         z-index: 2;
     }
