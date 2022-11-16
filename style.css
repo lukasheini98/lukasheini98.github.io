@@ -46,10 +46,7 @@ body{
     .projects{
         margin: 100px 20px;
     }
-    .project:hover {
-        transform: translate3d(100px,0,0);
-        transition: transform .5s ease-in-out;
-    }
+  
     .project{
         z-index: 2;
         padding: 0px 20px;
@@ -117,3 +114,59 @@ body{
         margin-top: 200px;
         text-align: center;
     }
+
+    .backend:hover img {
+        translate:
+          calc((var(--ratio-x) - 0.5) * 20%)
+          calc((var(--ratio-y) - 0.5) * 20%);
+      }
+
+
+      .backend {
+        overflow: hidden;
+        transform-style: preserve-3d;
+        touch-action: none;
+      }
+      
+      .backend:hover {
+        transform:
+          rotateX(calc((var(--ratio-y) - 0.5) * 50deg))
+          rotateY(calc((var(--ratio-x) - 0.5) * -40deg));
+      }
+      
+      .backend:not(:hover) {
+        transform: rotateX(0deg) rotateY(0deg);
+        transition: transform 1.5s;
+      }
+
+      /* */
+
+
+    .frontend:hover img {
+        translate:
+          calc((var(--ratio-x-f) - 0.5) * 20%)
+          calc((var(--ratio-y-f) - 0.5) * 20%);
+      }
+
+
+      .frontend {
+        overflow: hidden;
+        transform-style: preserve-3d;
+        touch-action: none;
+      }
+      
+      .frontend:hover {
+        transform:
+          rotateX(calc((var(--ratio-y-f) - 0.5) * 50deg))
+          rotateY(calc((var(--ratio-x-f) - 0.5) * -40deg));
+      }
+      
+      .frontend:not(:hover) {
+        transform: rotateX(0deg) rotateY(0deg);
+        transition: transform 1.5s;
+      }
+
+      
+
+      
+      

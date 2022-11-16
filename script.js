@@ -1,8 +1,29 @@
-var portraitImage = document.getElementById("portrait");
-var resumeDiv = document.getElementById("resumeSection");
-/*portraitImage.addEventListener("mouseover", (event) => {
-    var p = resumeDiv.querySelector("p");
-    var pElement = document.createElement("p");
-    pElement.innerHTML = "Hier ist was";
-    resumeDiv.append(pElement);
-});*/
+console.clear()
+
+const backend = document.querySelector('.backend');
+const frontend = document.querySelector('.frontend');
+
+const UPDATE = ({ x, y }) => {
+  const BOUNDSb = backend.getBoundingClientRect()
+  const posXb = x - BOUNDSb.x
+  const posYb = y - BOUNDSb.y
+  const ratioXb = posXb / BOUNDSb.width
+  const ratioYb = posYb / BOUNDSb.height
+  
+  backend.style.setProperty('--ratio-x', ratioXb)
+  backend.style.setProperty('--ratio-y', ratioYb)
+
+  const BOUNDS = frontend.getBoundingClientRect()
+  const posX = x - BOUNDS.x
+  const posY = y - BOUNDS.y
+  const ratioX = posX / BOUNDS.width
+  const ratioY = posY / BOUNDS.height
+  
+  frontend.style.setProperty('--ratio-x-f', ratioX)
+  frontend.style.setProperty('--ratio-y-f', ratioY)
+
+
+
+}
+
+document.body.addEventListener('pointermove', UPDATE)
