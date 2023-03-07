@@ -55,9 +55,10 @@ body{
         margin-bottom: 40px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         }
-    .duneImage{
+    .project-image{
         border-radius: 10px;
     }
+    
     .linkstoProject a{
         text-decoration: none;
     }
@@ -68,10 +69,11 @@ body{
     
     .skillset{
         display: flex;
-        gap: 150px;
         justify-content: center;
+        gap: 20px;
     }
     .backend{
+        max-width: 10%;
         border-radius: 10px;
         padding: 10px 50px;
         background-color: rgb(62, 61, 61);
@@ -79,6 +81,7 @@ body{
 
     }
     .frontend{
+        max-width: 10%;
         border-radius: 10px;
         padding: 10px 50px;
         background-color: rgb(62, 61, 61);
@@ -87,7 +90,6 @@ body{
 
     .skillset img{
         display: block;
-        margin: auto;
         padding: 10px;
     }
     .navbar{
@@ -101,13 +103,12 @@ body{
     .emaillink{
         text-decoration: none;
         color:#C6C8CD;
-        padding: 5px 30px;
+        
         border-radius: 5px;
         border: 1px solid #C6C8CD;
     }
     .emaillink:hover{
-        box-shadow: 0 0 2px 2px #C6C8CD;
-
+        box-shadow: 0 0 8px #C6C8CD;
     }
 
     .footer{
@@ -166,7 +167,32 @@ body{
         transition: transform 1.5s;
       }
 
+      .backend-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .frontend-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      @media only screen and (max-width: 675px) {
+        .project div{
+            flex-direction: column;
+            text-align: center;
+        }
+        .project-image{
+            width: 100%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        h3{
+            font-size: medium;
+        }
+      }
       
-
       
       
