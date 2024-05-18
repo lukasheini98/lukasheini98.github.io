@@ -66,7 +66,10 @@ body{
     #contact {
         text-align: center;
     }
-    
+    #contact a {
+      padding: 5px;
+      font-weight: bold;
+    }
     .skillset{
         display: flex;
         justify-content: center;
@@ -108,7 +111,8 @@ body{
         border: 1px solid #C6C8CD;
     }
     .emaillink:hover{
-        box-shadow: 0 0 8px #C6C8CD;
+        background-color: white;
+        color: #151E2C;
     }
 
     .footer{
