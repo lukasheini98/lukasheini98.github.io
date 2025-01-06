@@ -43,6 +43,9 @@ body{
         text-align: center;
         margin: 100px 20px;
     }
+    .aboutMe p {
+      margin: 10px;
+    }
     .projects{
         margin: 100px 20px;
     }
