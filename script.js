@@ -1,5 +1,3 @@
-console.clear()
-
 const backend = document.querySelector('.backend');
 const frontend = document.querySelector('.frontend');
 
@@ -21,9 +19,18 @@ const UPDATE = ({ x, y }) => {
   
   frontend.style.setProperty('--ratio-x-f', ratioX)
   frontend.style.setProperty('--ratio-y-f', ratioY)
-
-
-
 }
+
+const images = document.querySelectorAll('.link');
+images.forEach((element) => {
+  element.addEventListener("click", () => {
+    if(element.id == "github"){
+      document.getElementById("github_link").click();
+    }
+    else if(element.id == "linkedin"){
+      document.getElementById("linkedin_link").click();
+    }
+  });
+});
 
 document.body.addEventListener('pointermove', UPDATE)
