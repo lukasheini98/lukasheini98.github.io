@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Lukas Heini — Portfolio</title>
+    <meta name="description" content="Portfolio of Lukas Heini — Business Informatics student, developer, and builder of interactive web experiences.">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="style.css">
@@ -13,234 +14,242 @@
 
 <body>
 
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar">
+        <div class="wrapper">
+            <a href="#" class="logo">lukas<span>.</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="Resume_LukasHeini.pdf" download="resume" class="resume-link">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <div class="navbar">
-        <ul>
-            <li><a href="#about">
-                    <h4>About Me</h4>
-                </a></li>
-            <li><a href="#projects">
-                    <h4>Projects</h4>
-                </a></li>
-            <li><a href="#contact">
-                    <h4>Contact</h4>
-                </a></li>
-            <li><a href="resume_eng.pdf" download="resume">
-                    <h4>Resume</h4>
-                </a></li>
-        </ul>
-    </div>
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="about">
+        <div class="wrapper">
+            <div class="hero-inner">
+                <div class="hero-text">
+                    <p class="greeting">Hi, my name is</p>
+                    <h1>Lukas Heini.</h1>
+                    <p>I'm a Master's student in Business Informatics, driven by a passion for exploring innovative
+                        technologies and advancements in computer science.</p>
+                </div>
+                <img src="images/portrait_2.jpeg" alt="Portrait of Lukas Heini" class="hero-portrait">
+            </div>
+            <div class="scroll-hint" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
 
-    <div class="aboutMe" id="about">
-        <h2>About Me</h2>
-        <img src="images/portrait_2.jpeg" alt="" id="portrait" width="175px">
-        <p>I'm Lukas Heini, a Master's student in Business Informatics, driven by a passion for exploring innovative
-            technologies and advancements in computer science. </p>
-        <p>These are some of the technologies I enjoy working with:</p>
-    </div>
-    </div>
+    <!-- ========== SKILLS ========== -->
+    <section id="skills">
+        <div class="wrapper">
+            <p class="section-label reveal">What I work with</p>
+            <h2 class="section-title reveal">Skills &amp; Tools</h2>
+            <div class="skills-grid reveal-stagger">
+                <div class="skill-card reveal">
+                    <h3>Backend</h3>
+                    <div class="icons">
+                        <img src="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png"
+                            alt="Java">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg" alt="Python">
+                    </div>
+                </div>
+                <div class="skill-card reveal">
+                    <h3>Frontend</h3>
+                    <div class="icons">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="HTML5">
+                        <img src="images/js-logo.png" alt="JavaScript">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="skillset">
-        <div class="backend">
-            <div class="backend-container">
-                <h3>Backend</h3>
-                <img src="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png"
-                    alt="" width="50px">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Python.svg" alt="" width="50px">
-            </div>
-        </div>
-        <div class="frontend">
-            <div class="frontend-container">
-                <h3>Frontend</h3>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg" alt="" width="50px">
-                <img src="images/js-logo.png" alt="" width="50px">
-            </div>
-        </div>
-    </div>
+    <!-- ========== PROJECTS ========== -->
+    <section id="projects">
+        <div class="wrapper">
+            <p class="section-label reveal">Selected work</p>
+            <h2 class="section-title reveal">Projects</h2>
 
-    </div>
+            <div class="projects-list reveal-stagger">
 
-    <div class="projects" id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Movie Web App</h4>
-                    <p>Movie diary to log and rate movie</p>
-                    <p><i>JavaScript, Python</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/Movie-Search" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="http://lukasjojo98.pythonanywhere.com" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px;">computer</span> </a>
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Movie Web App</h3>
+                        <p class="desc">Movie diary to log and rate movies</p>
+                        <p class="tech">JavaScript · Python</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/Movie-Search" target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="http://lukasjojo98.pythonanywhere.com" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <img src="images/moviebase.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Scene Editor for 3D Objects</h4>
-                    <p>Interactive tool for playing around with 3D objects</p>
-                    <p><i>Angular and ThreeJs</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/Szeneneditor" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="https://szeneneditor.vercel.app" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px;">computer</span> </a>
-                    </div>
-                </div>
-                <img src="images/scene-editor.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Collection of Mini Games</h4>
-                    <p>Playable Browser Games</p>
-                    <p><i>JavaScript</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/lukasjojo98.github.io" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="https://lukasjojo98.github.io" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px;">computer</span> </a>
-                    </div>
-                </div>
-                <img src="images/games.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Pathfinding Visualizer</h4>
-                    <p>Breadth-first search algorithm</p>
-                    <p><i>JavaScript</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/Pathfinding-Visualizer" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="https://pathfinding-visualizer-esjj.onrender.com" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px;">computer</span>
-                        </a>
-                    </div>
-                </div>
-                <img src="images/pathfinder.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Levenshtein Distance</h4>
-                    <p>Metric for measuring the difference between two sequences</p>
-                    <p><i>JavaScript</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/Levenshtein-Distance" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="https://levenshtein-distance-kappa.vercel.app" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px;">computer</span> </a>
-                    </div>
-                </div>
-                <img src="images/levenshtein_distance.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Wordle</h4>
-                    <p>Guess a new five letter word every day</p>
-                    <p><i>JavaScript</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/Wordle" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="Wordle/index.html" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">computer</span>
-                        </a>
-                    </div>
-                </div>
-                <img src="images/wordle.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Sudoku</h4>
-                    <p>Solve different Sudoku boards</p>
-                    <p><i>JavaScript</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/Sudoku" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="Sudoku/index.html" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">computer</span>
-                        </a>
-                    </div>
-                </div>
-                <img src="images/sudoku.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-        <div class="project">
-            <div style="display: flex; padding: 20px; justify-content: space-between;">
-                <div>
-                    <h4>Lebenslauf Editor</h4>
-                    <p>Simple tool to create a quick CV</p>
-                    <p><i>JavaScript</i></p>
-                    <div class="linkstoProject">
-                        <a href="https://github.com/lukasjojo98/lukasjojo98.github.io/tree/main/Lebenslauf"
-                            target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px; margin-right: 20px;">code</span>
-                        </a>
-                        <a href="https://lukasjojo98.github.io/Lebenslauf/index.html" target="_blank">
-                            <span class="material-symbols-outlined"
-                                style="border-radius: 50%; background-color: white; padding: 10px;">computer</span>
-                        </a>
-                    </div>
-                </div>
-                <img src="images/profile.png" alt="" width="400px" class="project-image">
-            </div>
-        </div>
-    </div>
+                    <img src="images/moviebase.png" alt="Movie Web App screenshot" class="project-thumb">
+                </article>
 
-    <div id="contact">
-        <h2>Contact</h2>
-        <p>You are interested in what I do and like to get in touch?</p>
-        <p>Don't hesitate to contact me.</p>
-        <a href="mailto:lukas.heini.98@googlemail.com" class="emaillink">Write a mail</a>
-        <div style="margin: 20px auto; width: 50%;">
-            <img style="width: 50px;" class="link" id="linkedin"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/240px-LinkedIn_icon.svg.png"
-                alt="">
-            <a href="https://linkedin.com/in/lukas-heini-59300b198" id="linkedin_link" style="display: none;"
-                target="_blank"></a>
-            <img style="width: 50px;" class="link" id="github" src="images/github.svg" alt="">
-            <a href="https://github.com/lukasjojo98" id="github_link" style="display: none;" target="_blank"></a>
-        </div>
-    </div>
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Scene Editor for 3D Objects</h3>
+                        <p class="desc">Interactive tool for playing around with 3D objects</p>
+                        <p class="tech">Angular · Three.js</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/Szeneneditor" target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="https://szeneneditor.vercel.app" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/scene-editor.png" alt="Scene Editor screenshot" class="project-thumb">
+                </article>
 
-    <div class="footer">
-        <p>Designed & built by Lukas Heini</p>
-    </div>
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Collection of Mini Games</h3>
+                        <p class="desc">Playable browser games</p>
+                        <p class="tech">JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/lukasjojo98.github.io" target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="https://lukasjojo98.github.io" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/games.png" alt="Mini Games screenshot" class="project-thumb">
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Pathfinding Visualizer</h3>
+                        <p class="desc">Breadth-first search algorithm visualized</p>
+                        <p class="tech">JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/Pathfinding-Visualizer" target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="https://pathfinding-visualizer-esjj.onrender.com" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/pathfinder.png" alt="Pathfinding Visualizer screenshot" class="project-thumb">
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Levenshtein Distance</h3>
+                        <p class="desc">Metric for measuring the difference between two sequences</p>
+                        <p class="tech">JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/Levenshtein-Distance" target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="https://levenshtein-distance-kappa.vercel.app" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/levenshtein_distance.png" alt="Levenshtein Distance screenshot"
+                        class="project-thumb">
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Wordle</h3>
+                        <p class="desc">Guess a new five letter word every day</p>
+                        <p class="tech">JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/Wordle" target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="Wordle/index.html" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/wordle.png" alt="Wordle screenshot" class="project-thumb">
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Sudoku</h3>
+                        <p class="desc">Solve different Sudoku boards</p>
+                        <p class="tech">JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/Sudoku" target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="Sudoku/index.html" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/sudoku.png" alt="Sudoku screenshot" class="project-thumb">
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="project-info">
+                        <h3>Lebenslauf Editor</h3>
+                        <p class="desc">Simple tool to create a quick CV</p>
+                        <p class="tech">JavaScript</p>
+                        <div class="project-links">
+                            <a href="https://github.com/lukasjojo98/lukasjojo98.github.io/tree/main/Lebenslauf"
+                                target="_blank">
+                                <span class="material-symbols-outlined">code</span> Code
+                            </a>
+                            <a href="https://lukasjojo98.github.io/Lebenslauf/index.html" target="_blank">
+                                <span class="material-symbols-outlined">open_in_new</span> Demo
+                            </a>
+                        </div>
+                    </div>
+                    <img src="images/profile.png" alt="Lebenslauf Editor screenshot" class="project-thumb">
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact" class="contact-section">
+        <div class="wrapper">
+            <p class="section-label reveal">Get in touch</p>
+            <h2 class="section-title reveal">Contact</h2>
+            <p class="reveal">Interested in what I do? Don't hesitate to reach out.</p>
+            <a href="mailto:lukas.heini.98@googlemail.com" class="contact-btn reveal">Write a mail</a>
+            <div class="social-links reveal">
+                <a href="https://linkedin.com/in/lukas-heini-59300b198" target="_blank" aria-label="LinkedIn">
+                    <img src="images/LinkedIn_icon.svg"
+                        alt="LinkedIn">
+                </a>
+                <a href="https://github.com/lukasjojo98" target="_blank" aria-label="GitHub">
+                    <img src="images/github.svg" alt="GitHub">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="wrapper">
+            <p>Designed &amp; built by Lukas Heini</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>

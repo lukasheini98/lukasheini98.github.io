@@ -1,36 +1,46 @@
-const backend = document.querySelector('.backend');
-const frontend = document.querySelector('.frontend');
+// ================================================
+// Scroll-reveal observer
+// ================================================
+const revealElements = document.querySelectorAll('.reveal');
 
-const UPDATE = ({ x, y }) => {
-  const BOUNDSb = backend.getBoundingClientRect()
-  const posXb = x - BOUNDSb.x
-  const posYb = y - BOUNDSb.y
-  const ratioXb = posXb / BOUNDSb.width
-  const ratioYb = posYb / BOUNDSb.height
-  
-  backend.style.setProperty('--ratio-x', ratioXb)
-  backend.style.setProperty('--ratio-y', ratioYb)
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target); // animate once
+      }
+    });
+  },
+  { threshold: 0.12 }
+);
 
-  const BOUNDS = frontend.getBoundingClientRect()
-  const posX = x - BOUNDS.x
-  const posY = y - BOUNDS.y
-  const ratioX = posX / BOUNDS.width
-  const ratioY = posY / BOUNDS.height
-  
-  frontend.style.setProperty('--ratio-x-f', ratioX)
-  frontend.style.setProperty('--ratio-y-f', ratioY)
-}
+revealElements.forEach((el) => revealObserver.observe(el));
 
-const images = document.querySelectorAll('.link');
-images.forEach((element) => {
-  element.addEventListener("click", () => {
-    if(element.id == "github"){
-      document.getElementById("github_link").click();
-    }
-    else if(element.id == "linkedin"){
-      document.getElementById("linkedin_link").click();
-    }
-  });
+// ================================================
+// Navbar shadow on scroll
+// ================================================
+const navbar = document.querySelector('.navbar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 20) {
+    navbar.style.boxShadow = '0 2px 20px rgba(0,0,0,0.4)';
+  } else {
+    navbar.style.boxShadow = 'none';
+  }
 });
 
-document.body.addEventListener('pointermove', UPDATE)
+// ================================================
+// Hide scroll-hint after first scroll
+// ================================================
+const scrollHint = document.querySelector('.scroll-hint');
+if (scrollHint) {
+  let hidden = false;
+  window.addEventListener('scroll', () => {
+    if (!hidden && window.scrollY > 60) {
+      scrollHint.style.opacity = '0';
+      scrollHint.style.transition = 'opacity 0.5s';
+      hidden = true;
+    }
+  });
+}
